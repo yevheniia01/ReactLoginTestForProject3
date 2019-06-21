@@ -1,0 +1,39 @@
+{
+  "name": "react-fancyapp",
+  "version": "1.0.0",
+  "description": "MERN Login App",
+  "main": "app.js",
+  "proxy": "http://0.0.0.0:3000",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "./node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inkinkz/react-fancyapp.git"
+  },
+  "author": "Inkz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inkinkz/react-fancyapp/issues"
+  },
+  "homepage": "https://github.com/inkinkz/react-fancyapp#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "body-parser": "~1.18.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-session": "^1.15.6",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.10",
+    "nodemon": "^1.18.9",
+    "passport": "^0.4.0",
+    "passport-http": "*",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "supertest": "^3.4.2"
+  }
+}
