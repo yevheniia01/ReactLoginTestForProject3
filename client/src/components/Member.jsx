@@ -131,10 +131,10 @@ class Member extends Component {
         <div>
           <form id="changePasswordForm" onSubmit={this.onPasswordChange}>
             <div className="container">
-              <h1 className="font-mukta">{`${t("GREETING")} ${
+              <h1 className="font-nav">{`${t("GREETING")} ${
                 this.state.name
               }`}</h1>
-              <h4 className="font-mukta">{`Email: ${this.state.email}`}</h4>
+              <h4 className="font-nav">{`Email: ${this.state.email}`}</h4>
               <p
                 id="isChanged"
                 className={`errorMessage ${!this.isChanged ? "hidden" : ""}`}
@@ -147,14 +147,14 @@ class Member extends Component {
               >
                 {t("INCORRECT_CURRENT_PASSWORD")}
               </p>
-              <h1 className="font-mukta">{t("CHANGE_PASSWORD")}</h1>
-              <h3 className="font-mukta">{t("ENTER_NEW_PASSWORD_BELOW")}</h3>
+              <h1 className="font-nav">{t("CHANGE_PASSWORD")}</h1>
+              <h3 className="font-nav">{t("ENTER_NEW_PASSWORD_BELOW")}</h3>
               <label htmlFor="currentPassword">
-                <b className="font-mukta">{t("CURRENT_PASSWORD")}</b>
+                <b className="font-nav">{t("CURRENT_PASSWORD")}</b>
                 <br />
               </label>
               <input
-                className="font-mukta"
+                className="font-nav"
                 type="password"
                 placeholder={t("ENTER_CURRENT_PASSWORD")}
                 name="currentPassword"
@@ -162,11 +162,11 @@ class Member extends Component {
               />
               <br />
               <label htmlFor="password">
-                <b className="font-mukta">{t("NEW_PASSWORD")}</b>
+                <b className="font-nav">{t("NEW_PASSWORD")}</b>
                 <br />
               </label>
               <input
-                className="font-mukta"
+                className="font-nav"
                 type="password"
                 placeholder={t("ENTER_NEW_PASSWORD")}
                 name="password"
@@ -174,7 +174,7 @@ class Member extends Component {
               />
               <br />
               <label htmlFor="password2">
-                <b className="font-mukta">{t("ENTER_NEW_PASSWORD")}</b>
+                <b className="font-nav">{t("ENTER_NEW_PASSWORD")}</b>
                 <br />
               </label>
               <p
@@ -184,14 +184,14 @@ class Member extends Component {
                 {t("PASSWORDS_NOT_MATCH")}
               </p>
               <input
-                className="font-mukta"
+                className="font-nav"
                 type="password"
                 placeholder={t("CONFIRM_NEW_PASSWORD")}
                 name="password2"
                 onChange={this.onChange}
               />
               <button
-                className="font-mukta registerbtn"
+                className="font-nav registerbtn"
                 type="submit"
                 name="changePw"
                 disabled={!this.isEnabled}
@@ -205,10 +205,10 @@ class Member extends Component {
           </form>
           <form onSubmit={this.onDelete}>
             <div className="container">
-              <h1 className="font-mukta">{t("DELETE_ACCOUNT")}</h1>
-              <p className="font-mukta">{t("DELETE_ACCOUNT_MESSAGE")} </p>
+              <h1 className="font-nav">{t("DELETE_ACCOUNT")}</h1>
+              <p className="font-nav">{t("DELETE_ACCOUNT_MESSAGE")} </p>
               <button
-                className="font-mukta registerbtn"
+                className="font-nav registerbtn"
                 type="submit"
                 name="deleteAcc"
               >

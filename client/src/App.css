@@ -1,7 +1,81 @@
 /* Font */
-.font-mukta {
+
+/*Some Animation*/
+.firstCont:hover{
+  background-color: royalblue;
+}
+.secondCont:hover{
+  background-color: royalblue;
+}
+.firstCont::before{
+  position: absolute;
+	content: "Ver mas";
+	top: 0px;
+	left: -220px;
+	width: 97.5%;
+	height: 110%;
+  background-color:black;
+  border-radius: 10px;
+	color: white;
+	text-align: center;
+	opacity: 0;
+	padding-top: 80px;
+	transition:.3s ease-in-out;
+  -webkit-transition:.3s ease-in-out;
+  -moz-transition:.3s ease-in-out;
+  -o-transition:.3s ease-in-out;
+}
+.secondCont::before{
+  position: absolute;
+	content: "Ver mas";
+	top: 0px;
+	left: -220px;
+	width: 97.5%;
+	height: 110%;
+  background-color:black;
+  border-radius: 10px;
+	color: white;
+	text-align: center;
+	opacity: 0;
+	padding-top: 80px;
+	transition:.3s ease-in-out;
+  -webkit-transition:.3s ease-in-out;
+  -moz-transition:.3s ease-in-out;
+  -o-transition:.3s ease-in-out;
+}
+.firstCont:hover::before{
+  left: 15px;
+	opacity: .6;
+}
+.secondCont:hover::before{
+  left: 15px;
+	opacity: .6;
+}
+
+.firstCont{
+  background-image: url(/static/media/brick-wall-1834784_640.3c734eba.jpg);
+    height: 110%;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px 0px #191313;
+}
+.secondCont{
+  background-image: url('../src/images/marriage-918864_640.jpg');
+  background-position: center;
+  height: 110%;
+  border-radius: 10px;
+  box-shadow: 8px 8px 10px 0px #191313;
+}
+.firstRow{
+  margin-bottom: 5%
+}
+.font-nav {
   font-family: "Mukta", sans-serif;
   line-height: 170%;
+}
+.text-center{
+  margin-bottom: 10%;
+    margin-top: 5%
 }
 
 body {
@@ -9,12 +83,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+/*.container {
   margin: 30px;
   margin-left: 120px;
   margin-right: 120px;
   background: #ffffff;
-}
+}*/
 
 a {
   color: #00b7ff;
@@ -32,9 +106,12 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: burlywood;
+  background-color: #214ed9a6;
   position: sticky;
   top: 0;
+}
+.b{
+  background-color: #3251cd;
 }
 
 li {

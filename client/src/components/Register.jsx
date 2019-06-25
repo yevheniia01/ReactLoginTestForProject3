@@ -121,14 +121,14 @@ class Register extends Component {
               >
                 {t("USER_EXISTED")}
               </p>
-              <h1 className="font-mukta">{t("REGISTER")}</h1>
-              <p className="font-mukta">{t("FILL_FORM_MESSAGE")}</p>
+              <h1 className="font-nav">{t("REGISTER")}</h1>
+              <p className="font-nav">{t("FILL_FORM_MESSAGE")}</p>
               <label htmlFor="name">
-                <b className="font-mukta">{t("NAME")}</b>
+                <b className="font-nav">{t("NAME")}</b>
                 <br />
               </label>
               <input
-                className="font-mukta"
+                className="font-nav"
                 type="text"
                 placeholder={t("ENTER_NAME")}
                 name="name"
@@ -137,7 +137,7 @@ class Register extends Component {
               />
               <br />
               <label htmlFor="email">
-                <b className="font-mukta">{t("EMAIL")}</b>
+                <b className="font-nav">{t("EMAIL")}</b>
                 <br />
               </label>
               <div>
@@ -149,7 +149,7 @@ class Register extends Component {
                 </p>
               </div>
               <input
-                className="font-mukta"
+                className="font-nav"
                 type="text"
                 placeholder={t("ENTER_EMAIL")}
                 name="email"
@@ -158,11 +158,11 @@ class Register extends Component {
               />
               <br />
               <label htmlFor="password">
-                <b className="font-mukta">{t("PASSWORD")}</b>
+                <b className="font-nav">{t("PASSWORD")}</b>
                 <br />
               </label>
               <input
-                className="font-mukta"
+                className="font-nav"
                 type="password"
                 placeholder={t("ENTER_PASSWORD")}
                 name="password"
@@ -171,7 +171,7 @@ class Register extends Component {
               />
               <br />
               <label htmlFor="password2">
-                <b className="font-mukta">{t("CONFIRM_PASSWORD")}</b>
+                <b className="font-nav">{t("CONFIRM_PASSWORD")}</b>
                 <br />
               </label>
               <div>
@@ -183,7 +183,7 @@ class Register extends Component {
                 </p>
               </div>
               <input
-                className="font-mukta"
+                className="font-nav"
                 type="password"
                 placeholder={t("PASSWORD_AGAIN")}
                 name="password2"
@@ -191,7 +191,7 @@ class Register extends Component {
                 onChange={this.onChange}
               />
               <button
-                className="font-mukta registerbtn"
+                className="font-nav registerbtn"
                 type="submit"
                 name="submit"
                 disabled={!this.isEnabled}

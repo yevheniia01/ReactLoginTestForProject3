@@ -66,14 +66,14 @@ class Login extends Component {
             <p className={`errorMessage ${!this.failed ? "hidden" : ""}`}>
               {t("INCORRECT_LOGIN")}
             </p>
-            <h1 className="font-mukta">{t("LOGIN")}</h1>
-            <p className="font-mukta">{t("LOGIN_ENTER_EMAIL")}</p>
+            <h1 className="font-nav">{t("LOGIN")}</h1>
+            <p className="font-nav">{t("LOGIN_ENTER_EMAIL")}</p>
             <label htmlFor="email">
-              <b className="font-mukta">{t("EMAIL")}</b>
+              <b className="font-nav">{t("EMAIL")}</b>
               <br />
             </label>
             <input
-              className="font-mukta"
+              className="font-nav"
               type="text"
               placeholder={t("ENTER_EMAIL")}
               name="email"
@@ -82,11 +82,11 @@ class Login extends Component {
             />
             <br />
             <label htmlFor="password">
-              <b className="font-mukta">{t("PASSWORD")}</b>
+              <b className="font-nav">{t("PASSWORD")}</b>
               <br />
             </label>
             <input
-              className="font-mukta"
+              className="font-nav"
               type="password"
               placeholder={t("ENTER_PASSWORD")}
               name="password"
@@ -95,7 +95,7 @@ class Login extends Component {
             />
             <br />
             <button
-              className="font-mukta registerbtn"
+              className="font-nav registerbtn"
               type="submit"
               name="submit"
             >

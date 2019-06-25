@@ -52,9 +52,9 @@ class Navbar extends Component {
 
     return (
       <div>
-        <ul className="font-mukta">
+        <ul className="font-nav">
           <li className="active">
-            <Link to="/">Fancy App</Link>
+            <Link to="/" className="b">Home</Link>
           </li>
           {localStorage.name ? loggedIn : loginRegLink}
           <select
